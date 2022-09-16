@@ -39,7 +39,13 @@ public class ContactBook {
             contacts[i] = contacts[i+1];
         counter--;
     }
-
+    public String getName(int phone) {
+        for (int i = 0; i < counter; i++) {
+            if (contacts[i].getPhone() == phone)
+                return contacts[i].getName();
+        }
+        return null;
+    }
     //Pre: name != null && hasContact(name)
     public int getPhone(String name) {
         return contacts[searchIndex(name)].getPhone();
