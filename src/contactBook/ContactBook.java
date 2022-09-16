@@ -105,7 +105,6 @@ public class ContactBook {
             for (int j=i+1;j<counter;j++)
                 if (i!=j && contacts[i] == contacts[j]) {
                     return true;
-
                 }
         return false;
     }
