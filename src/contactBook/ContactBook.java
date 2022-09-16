@@ -99,10 +99,10 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
-    public boolean repeatedContacts(ContactBook cBook) {
+    public boolean repeatedContacts() {
 
-        for (int i=0;i<cBook.counter;i++)
-            for (int j=i+1;j<cBook.counter;j++)
+        for (int i=0;i<counter;i++)
+            for (int j=i+1;j<counter;j++)
                 if (i!=j && contacts[i] == contacts[j]) {
                     return true;
 
